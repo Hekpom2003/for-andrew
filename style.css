@@ -1,0 +1,47 @@
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 660px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slide .markers {
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide .markers li {
+  list-style-type: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.slide .markers li.is-active .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.slide .markers li .tooltip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  padding: 1em;
+  transition: 0.3s ease opacity, visibility;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+/*# sourceMappingURL=style.css.map */
